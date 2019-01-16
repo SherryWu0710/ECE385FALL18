@@ -1,0 +1,646 @@
+Power Analyzer report for ECE385_Lab4_adder
+Tue Sep 25 18:59:54 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Parallel Compilation
+  3. Power Analyzer Summary
+  4. Power Analyzer Settings
+  5. Indeterminate Toggle Rates
+  6. Operating Conditions Used
+  7. Thermal Power Dissipation by Block
+  8. Thermal Power Dissipation by Block Type
+  9. Thermal Power Dissipation by Hierarchy
+ 10. Current Drawn from Voltage Supplies Summary
+ 11. VCCIO Supply Current Drawn by I/O Bank
+ 12. VCCIO Supply Current Drawn by Voltage
+ 13. Confidence Metric Details
+ 14. Signal Activities
+ 15. Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.2%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Power Analyzer Summary                                                                    ;
++----------------------------------------+--------------------------------------------------+
+; Power Analyzer Status                  ; Successful - Tue Sep 25 18:59:54 2018            ;
+; Quartus Prime Version                  ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition      ;
+; Revision Name                          ; ECE385_Lab4_adder                                ;
+; Top-level Entity Name                  ; lab4_adders_toplevel                             ;
+; Family                                 ; Cyclone IV E                                     ;
+; Device                                 ; EP4CE115F29C7                                    ;
+; Power Models                           ; Final                                            ;
+; Total Thermal Power Dissipation        ; 139.47 mW                                        ;
+; Core Dynamic Thermal Power Dissipation ; 0.00 mW                                          ;
+; Core Static Thermal Power Dissipation  ; 98.50 mW                                         ;
+; I/O Thermal Power Dissipation          ; 40.97 mW                                         ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Power Analyzer Settings                                                                                                  ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                           ; Setting                               ; Default Value ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+; Use smart compilation                                            ; Off                                   ; Off           ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                                    ; On            ;
+; Enable compact report table                                      ; Off                                   ; Off           ;
+; Power Analyzer Report Power Dissipation                          ; On                                    ; Off           ;
+; Preset Cooling Solution                                          ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ;               ;
+; Board thermal model                                              ; None (CONSERVATIVE)                   ;               ;
+; Default Power Toggle Rate                                        ; 12.5%                                 ; 12.5%         ;
+; Default Power Input I/O Toggle Rate                              ; 12.5%                                 ; 12.5%         ;
+; Use vectorless estimation                                        ; On                                    ; On            ;
+; Use Input Files                                                  ; Off                                   ; Off           ;
+; Filter Glitches in VCD File Reader                               ; On                                    ; On            ;
+; Power Analyzer Report Signal Activity                            ; Off                                   ; Off           ;
+; Device Power Characteristics                                     ; TYPICAL                               ; TYPICAL       ;
+; Automatically Compute Junction Temperature                       ; On                                    ; On            ;
+; Specified Junction Temperature                                   ; 25                                    ; 25            ;
+; Ambient Temperature                                              ; 25                                    ; 25            ;
+; Use Custom Cooling Solution                                      ; Off                                   ; Off           ;
+; Board Temperature                                                ; 25                                    ; 25            ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++--------------------------------------+
+; Indeterminate Toggle Rates           ;
++--------+-----------------------------+
+; Node   ; Reason                      ;
++--------+-----------------------------+
+; Clk    ; No valid clock domain found ;
+; Run    ; No valid clock domain found ;
+; Reset  ; No valid clock domain found ;
+; SW[15] ; No valid clock domain found ;
+; LoadB  ; No valid clock domain found ;
+; SW[14] ; No valid clock domain found ;
+; SW[13] ; No valid clock domain found ;
+; SW[12] ; No valid clock domain found ;
+; SW[11] ; No valid clock domain found ;
+; SW[10] ; No valid clock domain found ;
+; SW[9]  ; No valid clock domain found ;
+; SW[8]  ; No valid clock domain found ;
+; SW[7]  ; No valid clock domain found ;
+; SW[6]  ; No valid clock domain found ;
+; SW[5]  ; No valid clock domain found ;
+; SW[4]  ; No valid clock domain found ;
+; SW[3]  ; No valid clock domain found ;
+; SW[2]  ; No valid clock domain found ;
+; SW[0]  ; No valid clock domain found ;
+; SW[1]  ; No valid clock domain found ;
++--------+-----------------------------+
+
+
++-------------------------------------------------------------------------+
+; Operating Conditions Used                                               ;
++---------------------------------------------+---------------------------+
+; Setting                                     ; Value                     ;
++---------------------------------------------+---------------------------+
+; Device power characteristics                ; Typical                   ;
+;                                             ;                           ;
+; Voltages                                    ;                           ;
+;     VCCINT                                  ; 1.20 V                    ;
+;     VCCA                                    ; 2.50 V                    ;
+;     VCCD                                    ; 1.20 V                    ;
+;     2.5 V I/O Standard                      ; 2.5 V                     ;
+;                                             ;                           ;
+; Auto computed junction temperature          ; 25.9 degrees Celsius      ;
+;     Ambient temperature                     ; 25.0 degrees Celsius      ;
+;     Junction-to-Case thermal resistance     ; 3.90 degrees Celsius/Watt ;
+;     Case-to-Heat Sink thermal resistance    ; 0.10 degrees Celsius/Watt ;
+;     Heat Sink-to-Ambient thermal resistance ; 2.50 degrees Celsius/Watt ;
+;                                             ;                           ;
+; Board model used                            ; None                      ;
++---------------------------------------------+---------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                                                                                                                                                        ;
++----------------------------------------------------------------------------------------------------------------+---------------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; Block Name                                                                                                     ; Block Type          ; Total Thermal Power ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ;
++----------------------------------------------------------------------------------------------------------------+---------------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; CO~reg0                                                                                                        ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[0]~reg0                                                                                                    ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[1]~reg0                                                                                                    ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[2]~reg0                                                                                                    ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[3]~reg0                                                                                                    ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[4]~reg0                                                                                                    ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[5]~reg0                                                                                                    ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[6]~reg0                                                                                                    ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[7]~reg0                                                                                                    ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[8]~reg0                                                                                                    ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[9]~reg0                                                                                                    ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[10]~reg0                                                                                                   ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[11]~reg0                                                                                                   ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[12]~reg0                                                                                                   ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[13]~reg0                                                                                                   ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[14]~reg0                                                                                                   ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Sum[15]~reg0                                                                                                   ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex0[0]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex0[1]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex0[2]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex0[3]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex0[4]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex0[5]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex0[6]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex1[0]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex1[1]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex1[2]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex1[3]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex1[4]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex1[5]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex1[6]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex2[0]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex2[1]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex2[2]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex2[3]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex2[4]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex2[5]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex2[6]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex3[0]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex3[1]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex3[2]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex3[3]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex3[4]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex3[5]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Ahex3[6]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex0[0]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex0[1]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex0[2]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex0[3]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex0[4]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex0[5]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex0[6]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex1[0]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex1[1]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex1[2]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex1[3]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex1[4]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex1[5]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex1[6]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex2[0]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex2[1]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex2[2]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex2[3]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex2[4]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex2[5]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex2[6]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex3[0]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex3[1]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex3[2]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex3[3]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex3[4]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex3[5]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; Bhex3[6]~reg0                                                                                                  ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[15]                                                                                                          ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[15]                                                                                                          ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[14]                                                                                                          ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[14]                                                                                                          ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A2|cout~0 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A2|cout~1 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[13]                                                                                                          ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[13]                                                                                                          ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[12]                                                                                                          ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[12]                                                                                                          ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[11]                                                                                                          ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[11]                                                                                                          ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[10]                                                                                                          ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[10]                                                                                                          ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F2|one_bit_lookahead_adder:A2|cout~0 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F2|one_bit_lookahead_adder:A2|cout~1 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[9]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[9]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[8]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[8]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[7]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[7]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A3|cout~0 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A3|cout~1 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[6]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[6]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[5]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[5]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[4]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[4]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A0|cout~0 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A0|cout~1 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[3]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[3]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[2]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[2]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[0]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[0]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[1]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[1]                                                                                                           ; Register cell       ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F0|one_bit_lookahead_adder:A1|cout~0 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F0|one_bit_lookahead_adder:A2|cout~0 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A0|cout~2 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A1|cout~0 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A3|cout~2 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F2|one_bit_lookahead_adder:A0|cout~0 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F2|one_bit_lookahead_adder:A2|cout~2 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A0|cout~0 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A0|cout~1 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A2|cout~2 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A3|cout~0 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; CO~0                                                                                                           ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F0|one_bit_lookahead_adder:A0|s      ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F0|one_bit_lookahead_adder:A1|s~0    ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F0|one_bit_lookahead_adder:A2|s~0    ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F0|one_bit_lookahead_adder:A3|s      ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A0|s~0    ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A0|s      ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A1|s      ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A2|s      ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A3|s~0    ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A3|s      ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F2|one_bit_lookahead_adder:A0|s      ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F2|one_bit_lookahead_adder:A1|s      ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F2|one_bit_lookahead_adder:A2|s~0    ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F2|one_bit_lookahead_adder:A2|s      ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F2|one_bit_lookahead_adder:A3|s      ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A0|s      ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A1|s      ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A2|s~0    ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A2|s      ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A3|s      ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex0_inst|WideOr6~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex0_inst|WideOr5~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex0_inst|WideOr4~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex0_inst|WideOr3~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex0_inst|WideOr2~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex0_inst|WideOr1~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex0_inst|WideOr0~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex1_inst|WideOr6~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex1_inst|WideOr5~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex1_inst|WideOr4~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex1_inst|WideOr3~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex1_inst|WideOr2~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex1_inst|WideOr1~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex1_inst|WideOr0~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex2_inst|WideOr6~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex2_inst|WideOr5~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex2_inst|WideOr4~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex2_inst|WideOr3~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex2_inst|WideOr2~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex2_inst|WideOr1~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex2_inst|WideOr0~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex3_inst|WideOr6~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex3_inst|WideOr5~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex3_inst|WideOr4~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex3_inst|WideOr3~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex3_inst|WideOr2~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex3_inst|WideOr1~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Ahex3_inst|WideOr0~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex0_inst|WideOr6~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex0_inst|WideOr5~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex0_inst|WideOr4~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex0_inst|WideOr3~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex0_inst|WideOr2~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex0_inst|WideOr1~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex0_inst|WideOr0~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex1_inst|WideOr6~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex1_inst|WideOr5~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex1_inst|WideOr4~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex1_inst|WideOr3~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex1_inst|WideOr2~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex1_inst|WideOr1~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex1_inst|WideOr0~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex2_inst|WideOr6~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex2_inst|WideOr5~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex2_inst|WideOr4~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex2_inst|WideOr3~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex2_inst|WideOr2~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex2_inst|WideOr1~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex2_inst|WideOr0~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex3_inst|WideOr6~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex3_inst|WideOr5~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex3_inst|WideOr4~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex3_inst|WideOr3~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex3_inst|WideOr2~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex3_inst|WideOr1~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; HexDriver:Bhex3_inst|WideOr0~0                                                                                 ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~0                                                                                                            ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[15]~1                                                                                                        ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[15]~0                                                                                                        ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~2                                                                                                            ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~3                                                                                                            ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~4                                                                                                            ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~5                                                                                                            ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~6                                                                                                            ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~7                                                                                                            ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~8                                                                                                            ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~9                                                                                                            ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~10                                                                                                           ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~11                                                                                                           ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~12                                                                                                           ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~13                                                                                                           ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~14                                                                                                           ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A~1                                                                                                            ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B~15                                                                                                           ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; CO                                                                                                             ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[0]                                                                                                         ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[1]                                                                                                         ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[2]                                                                                                         ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[3]                                                                                                         ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[4]                                                                                                         ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[5]                                                                                                         ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[6]                                                                                                         ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[7]                                                                                                         ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[8]                                                                                                         ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[9]                                                                                                         ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[10]                                                                                                        ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[11]                                                                                                        ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[12]                                                                                                        ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[13]                                                                                                        ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[14]                                                                                                        ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Sum[15]                                                                                                        ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Ahex0[0]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Ahex0[1]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Ahex0[2]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Ahex0[3]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex0[4]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex0[5]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex0[6]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex1[0]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex1[1]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex1[2]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex1[3]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex1[4]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex1[5]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex1[6]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex2[0]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Ahex2[1]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Ahex2[2]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex2[3]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex2[4]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex2[5]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex2[6]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex3[0]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex3[1]                                                                                                       ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Ahex3[2]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Ahex3[3]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Ahex3[4]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Ahex3[5]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Ahex3[6]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex0[0]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex0[1]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex0[2]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex0[3]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex0[4]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex0[5]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex0[6]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex1[0]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex1[1]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex1[2]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex1[3]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex1[4]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex1[5]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex1[6]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex2[0]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex2[1]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex2[2]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex2[3]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex2[4]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex2[5]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex2[6]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex3[0]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex3[1]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex3[2]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex3[3]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex3[4]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex3[5]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Bhex3[6]                                                                                                       ; I/O                 ; 0.18 mW             ; 0.00 mW                     ; 0.18 mW                        ; 0.00 mW                       ;
+; Clk                                                                                                            ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Run                                                                                                            ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; Reset                                                                                                          ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[15]                                                                                                         ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; LoadB                                                                                                          ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[14]                                                                                                         ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[13]                                                                                                         ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[12]                                                                                                         ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[11]                                                                                                         ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[10]                                                                                                         ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[9]                                                                                                          ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[8]                                                                                                          ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[7]                                                                                                          ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[6]                                                                                                          ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[5]                                                                                                          ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[4]                                                                                                          ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[3]                                                                                                          ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[2]                                                                                                          ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[0]                                                                                                          ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; SW[1]                                                                                                          ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; ~ALTERA_ASDO_DATA1~                                                                                            ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; ~ALTERA_FLASH_nCE_nCSO~                                                                                        ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; ~ALTERA_DCLK~                                                                                                  ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; ~ALTERA_DATA0~                                                                                                 ; I/O                 ; 0.01 mW             ; 0.00 mW                     ; 0.01 mW                        ; 0.00 mW                       ;
+; ~ALTERA_nCEO~                                                                                                  ; I/O                 ; 0.49 mW             ; 0.00 mW                     ; 0.49 mW                        ; 0.00 mW                       ;
+; Clk~inputclkctrl                                                                                               ; Clock control block ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[15]~feeder                                                                                                   ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[14]~feeder                                                                                                   ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; B[10]~feeder                                                                                                   ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
+; A[5]~feeder                                                                                                    ; Combinational cell  ; 0.00 mW             ; 0.00 mW                     ; --                             ; 0.00 mW                       ;
++----------------------------------------------------------------------------------------------------------------+---------------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                                   ;
++------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Block Type ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; I/O        ; 10.97 mW                          ; 0.00 mW                     ; 10.97 mW                       ; 0.00 mW                       ;    0.000                                                  ;
++------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                                                                                                                 ;
++-------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                            ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                                           ;
++-------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+; |lab4_adders_toplevel                                 ; 10.97 mW (10.97 mW)                  ; 0.00 mW (0.00 mW)               ; 10.97 mW (10.97 mW)               ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel                                                                                                         ;
+;     |HexDriver:Ahex0_inst                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|HexDriver:Ahex0_inst                                                                                    ;
+;     |HexDriver:Ahex1_inst                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|HexDriver:Ahex1_inst                                                                                    ;
+;     |HexDriver:Ahex2_inst                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|HexDriver:Ahex2_inst                                                                                    ;
+;     |HexDriver:Ahex3_inst                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|HexDriver:Ahex3_inst                                                                                    ;
+;     |HexDriver:Bhex0_inst                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|HexDriver:Bhex0_inst                                                                                    ;
+;     |HexDriver:Bhex1_inst                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|HexDriver:Bhex1_inst                                                                                    ;
+;     |HexDriver:Bhex2_inst                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|HexDriver:Bhex2_inst                                                                                    ;
+;     |HexDriver:Bhex3_inst                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|HexDriver:Bhex3_inst                                                                                    ;
+;     |hard_block:auto_generated_inst                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|hard_block:auto_generated_inst                                                                          ;
+;     |carry_lookahead_adder:carry_lookahead_adder_inst ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst                                                        ;
+;         |four_bit_lookahead_adder:F0                  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F0                            ;
+;             |one_bit_lookahead_adder:A0               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F0|one_bit_lookahead_adder:A0 ;
+;             |one_bit_lookahead_adder:A1               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F0|one_bit_lookahead_adder:A1 ;
+;             |one_bit_lookahead_adder:A2               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F0|one_bit_lookahead_adder:A2 ;
+;             |one_bit_lookahead_adder:A3               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F0|one_bit_lookahead_adder:A3 ;
+;         |four_bit_lookahead_adder:F1                  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1                            ;
+;             |one_bit_lookahead_adder:A0               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A0 ;
+;             |one_bit_lookahead_adder:A1               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A1 ;
+;             |one_bit_lookahead_adder:A2               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A2 ;
+;             |one_bit_lookahead_adder:A3               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F1|one_bit_lookahead_adder:A3 ;
+;         |four_bit_lookahead_adder:F2                  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F2                            ;
+;             |one_bit_lookahead_adder:A0               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F2|one_bit_lookahead_adder:A0 ;
+;             |one_bit_lookahead_adder:A1               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F2|one_bit_lookahead_adder:A1 ;
+;             |one_bit_lookahead_adder:A2               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F2|one_bit_lookahead_adder:A2 ;
+;             |one_bit_lookahead_adder:A3               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F2|one_bit_lookahead_adder:A3 ;
+;         |four_bit_lookahead_adder:F3                  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3                            ;
+;             |one_bit_lookahead_adder:A0               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A0 ;
+;             |one_bit_lookahead_adder:A1               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A1 ;
+;             |one_bit_lookahead_adder:A2               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A2 ;
+;             |one_bit_lookahead_adder:A3               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |lab4_adders_toplevel|carry_lookahead_adder:carry_lookahead_adder_inst|four_bit_lookahead_adder:F3|one_bit_lookahead_adder:A3 ;
++-------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn from Voltage Supplies Summary                                                                                        ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCINT         ; 14.84 mA                ; 0.00 mA                   ; 14.84 mA                 ; 14.84 mA                         ;
+; VCCIO          ; 12.38 mA                ; 0.00 mA                   ; 12.38 mA                 ; 12.38 mA                         ;
+; VCCA           ; 35.01 mA                ; 0.00 mA                   ; 35.01 mA                 ; 35.01 mA                         ;
+; VCCD           ; 2.71 mA                 ; 0.00 mA                   ; 2.71 mA                  ; 2.71 mA                          ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; 1        ; 2.5V          ; 1.52 mA             ; 0.00 mA               ; 1.52 mA              ;
+; 2        ; 2.5V          ; 1.50 mA             ; 0.00 mA               ; 1.50 mA              ;
+; 3        ; 2.5V          ; 1.50 mA             ; 0.00 mA               ; 1.50 mA              ;
+; 4        ; 2.5V          ; 1.63 mA             ; 0.00 mA               ; 1.63 mA              ;
+; 5        ; 2.5V          ; 1.62 mA             ; 0.00 mA               ; 1.62 mA              ;
+; 6        ; 2.5V          ; 1.53 mA             ; 0.00 mA               ; 1.53 mA              ;
+; 7        ; 2.5V          ; 1.59 mA             ; 0.00 mA               ; 1.59 mA              ;
+; 8        ; 2.5V          ; 1.50 mA             ; 0.00 mA               ; 1.50 mA              ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 2.5V          ; 12.38 mA                ; 0.00 mA                   ; 12.38 mA                 ; 12.38 mA                         ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                        ;
++----------------------------------------------------------------------------------------+-------------+------------+--------------+---------------+
+; Data Source                                                                            ; Total       ; Pin        ; Registered   ; Combinational ;
++----------------------------------------------------------------------------------------+-------------+------------+--------------+---------------+
+; Simulation (from file)                                                                 ;             ;            ;              ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)     ; 0 (0.0%)      ;
+;                                                                                        ;             ;            ;              ;               ;
+; Node, entity or clock assignment                                                       ;             ;            ;              ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)     ; 0 (0.0%)      ;
+;                                                                                        ;             ;            ;              ;               ;
+; Vectorless estimation                                                                  ;             ;            ;              ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 394 (94.5%) ; 75 (76.5%) ; 105 (100.0%) ; 214 (100.0%)  ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 394 (94.5%) ; 75 (76.5%) ; 105 (100.0%) ; 214 (100.0%)  ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 394 (94.5%) ; 75 (76.5%) ; 105 (100.0%) ; 214 (100.0%)  ;
+;                                                                                        ;             ;            ;              ;               ;
+; Default assignment                                                                     ;             ;            ;              ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 23 (5.5%)   ; 23 (23.5%) ; 0 (0.0%)     ; 0 (0.0%)      ;
+;                                                                                        ;             ;            ;              ;               ;
+; Assumed 0                                                                              ;             ;            ;              ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 23 (5.5%)   ; 23 (23.5%) ; 0 (0.0%)     ; 0 (0.0%)      ;
++----------------------------------------------------------------------------------------+-------------+------------+--------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-------------------------+
+; Power Analyzer Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Power Analyzer
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Tue Sep 25 18:59:41 2018
+Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off ECE385_Lab4_adder -c ECE385_Lab4_adder
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'ECE385_Lab4_adder.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Warning (332060): Node: Clk was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register CO~reg0 is being clocked by Clk
+Warning (332068): No clocks defined in design.
+Info (223000): Starting Vectorless Power Activity Estimation
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (223001): Completed Vectorless Power Activity Estimation
+Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 139.47 mW
+Info: Quartus Prime Power Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4932 megabytes
+    Info: Processing ended: Tue Sep 25 18:59:54 2018
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:13
+
+
