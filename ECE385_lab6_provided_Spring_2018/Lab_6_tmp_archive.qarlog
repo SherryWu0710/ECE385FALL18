@@ -1,0 +1,42 @@
+Quartus Prime Archive log --	C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Lab_6_tmp_archive.qarlog
+
+Archive:	C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Lab_6_tmp_archive.qar
+Date:		Tue Oct 09 14:25:16 2018
+Quartus Prime		18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/ALU.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/BEN.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Datapath.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/HexDriver.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Lab_6.qpf
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Lab_6.qsf
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Lab_6.sdc
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/MUX_four.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/MUX_two.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/NZP.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Reg_16.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Reg_f.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Synchronizer.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/ISDU.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/Mem2IO.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/SLC3_2.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/lab6_toplevel.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/memory_contents.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/slc3.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/test_memory.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/tristate.sv
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/db/signalTap_auto_stripped.stp
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/signalTap.stp
+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/testbench.sv
+c:/intelfpga_lite/18.0/quartus/bin64/assignment_defaults.qdf
+	======= Total: 25 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Tue Oct 09 14:25:19 2018
+Source archive file:	C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Lab_6_tmp_archive.qar
+Archive was extracted into	C:/Users/Sherry Wu/Desktop/
+		 - successfully.

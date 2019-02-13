@@ -1,0 +1,15 @@
+module BEN(
+			input logic Clk, Reset, Load,
+			input logic [2:0]NZP,
+			input logic [2:0]IR,
+			output logic BEN			
+);
+
+always_ff @ (posedge Clk)
+begin
+	if (Reset = 1b'1)
+	Ben = 1b'0;
+	
+	else if (Reset = 1
+end
+endmodule 

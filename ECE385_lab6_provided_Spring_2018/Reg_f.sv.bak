@@ -1,0 +1,6 @@
+module Reg_f(
+				input logic Clk, RESET, LD,
+				input logic [15:0] BUS,
+				input logic [3:0] DR, SR1, SR2,
+				output logic [15:0] SR1_OUT, SR2_OUT
+);

@@ -1,0 +1,264 @@
+# Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do Lab_6_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/tristate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:23 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/tristate.sv 
+# -- Compiling module tristate
+# 
+# Top level modules:
+# 	tristate
+# End time: 22:34:23 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/test_memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:23 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/test_memory.sv 
+# -- Compiling module test_memory
+# 
+# Top level modules:
+# 	test_memory
+# End time: 22:34:24 on Oct 16,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/SLC3_2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:24 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/SLC3_2.sv 
+# -- Compiling package SLC3_2
+# 
+# Top level modules:
+# 	--none--
+# End time: 22:34:24 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/Mem2IO.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:24 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/Mem2IO.sv 
+# -- Compiling module Mem2IO
+# 
+# Top level modules:
+# 	Mem2IO
+# End time: 22:34:24 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/ISDU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:24 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/ISDU.sv 
+# -- Compiling module ISDU
+# 
+# Top level modules:
+# 	ISDU
+# End time: 22:34:24 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/HexDriver.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:24 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 22:34:25 on Oct 16,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:25 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Datapath.sv 
+# -- Compiling module Datapath
+# 
+# Top level modules:
+# 	Datapath
+# End time: 22:34:25 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Synchronizer.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:25 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Synchronizer.sv 
+# -- Compiling module sync
+# -- Compiling module sync_r0
+# -- Compiling module sync_r1
+# 
+# Top level modules:
+# 	sync
+# 	sync_r0
+# 	sync_r1
+# End time: 22:34:25 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/MUX_two.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:25 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/MUX_two.sv 
+# -- Compiling module MUX_two
+# 
+# Top level modules:
+# 	MUX_two
+# End time: 22:34:25 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/MUX_four.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:25 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/MUX_four.sv 
+# -- Compiling module MUX_four
+# 
+# Top level modules:
+# 	MUX_four
+# End time: 22:34:25 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:26 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 22:34:26 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Reg_16.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:26 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Reg_16.sv 
+# -- Compiling module Reg_16
+# 
+# Top level modules:
+# 	Reg_16
+# End time: 22:34:26 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/NZP.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:26 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/NZP.sv 
+# -- Compiling module NZP
+# 
+# Top level modules:
+# 	NZP
+# End time: 22:34:26 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/BEN.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:26 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/BEN.sv 
+# -- Compiling module BEN
+# 
+# Top level modules:
+# 	BEN
+# End time: 22:34:26 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Reg_f.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:26 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Reg_f.sv 
+# -- Compiling module Reg_f
+# 
+# Top level modules:
+# 	Reg_f
+# End time: 22:34:26 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/slc3.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:26 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/slc3.sv 
+# -- Compiling module slc3
+# 
+# Top level modules:
+# 	slc3
+# End time: 22:34:26 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/memory_contents.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:26 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/memory_contents.sv 
+# -- Compiling package memory_contents_sv_unit
+# -- Importing package SLC3_2
+# -- Compiling module memory_parser
+# 
+# Top level modules:
+# 	memory_parser
+# End time: 22:34:26 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/lab6_toplevel.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:26 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/Updated_ECE385_lab6_provided_Spring_2018/lab6_toplevel.sv 
+# -- Compiling module lab6_toplevel
+# 
+# Top level modules:
+# 	lab6_toplevel
+# End time: 22:34:26 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/Sherry\ Wu/Desktop/ECE385/Lab\ 6/ECE385_lab6_provided_Spring_2018 {C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:34:26 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018" C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:34:27 on Oct 16,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 22:34:27 on Oct 16,2018
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.lab6_toplevel
+# Loading work.slc3
+# Loading work.HexDriver
+# Loading work.Datapath
+# Loading work.MUX_four
+# Loading work.Reg_16
+# Loading work.MUX_two
+# Loading work.ALU
+# Loading work.NZP
+# Loading work.BEN
+# Loading work.Reg_f
+# Loading work.Mem2IO
+# Loading work.tristate
+# Loading work.ISDU
+# Loading work.test_memory
+# Loading work.SLC3_2
+# Loading work.memory_contents_sv_unit
+# Loading work.memory_parser
+# Loading work.sync_r1
+# Loading work.sync
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Sherry Wu  Hostname: DESKTOP-BEHVNV8  ProcessID: 22468
+#           Attempting to use alternate WLF file "./wlft5qycjj".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5qycjj
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns
+add wave -position insertpoint  \
+sim:/testbench/lab6_toplevel/my_slc/state_controller/State
+restart -f
+run 5000ns
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# A bookmark named "bookmark0" has been added for window "Wave"
+# Bookmarks will be automatically saved and restored
+# End time: 22:59:43 on Oct 16,2018, Elapsed time: 0:25:16
+# Errors: 6, Warnings: 4
+# Bookmarks have been exported to: C:/Users/Sherry Wu/Desktop/ECE385/Lab 6/ECE385_lab6_provided_Spring_2018/simulation/modelsim/bookmarks.do

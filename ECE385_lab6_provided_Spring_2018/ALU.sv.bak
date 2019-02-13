@@ -1,0 +1,24 @@
+module ALU(
+	input logic [15:0] A,
+	input logic [15:0] B,
+	input logic [1:0] s,
+	output logic [15:0] result
+);
+
+always_comb
+begin
+		case(s)
+			2'b00 :
+				result = A + B; //ADD
+			
+			2'b01 :
+				result = A & B; //AND
+			
+			2'b10 :
+				result = ~A; //NOT A
+			
+			2'b11
+				result = A; 
+end 
+
+endmodule 

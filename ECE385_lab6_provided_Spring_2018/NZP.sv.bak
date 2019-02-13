@@ -1,0 +1,5 @@
+module NZP(
+				input  logic [15:0]bus,
+				input  logic Clk, Reset, Load,
+				output logic [2:0] NZP_out
+);
