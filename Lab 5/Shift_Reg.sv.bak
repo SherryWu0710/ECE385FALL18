@@ -1,0 +1,36 @@
+module shift_reg(
+	input  logic Clk,
+	input  logic LdA,
+	input  logic LdB,
+	input  logic [7:0] S,
+	input  logic [7:0] Data_A,
+	input  logic X,
+	input  logic Shift,
+	output logic [7:0] A,
+	output logic [7:0] B,
+	output logic Xout,
+	output logic M,
+	output logic shift_out,
+	
+);
+
+
+endmodule 
+
+module flip_flop (
+	input Clk, Load, Reset, D,
+	output logic Q 
+	);
+	
+always_ff @ (posedge Clk)
+begin
+	if (Reset)
+		Q <= 1'b0;
+	else
+	if (Load)
+		Q <= D;
+	else //in most cases this is redundant, maintaining Q inferred
+		Q <= Q;
+end
+
+endmodule 

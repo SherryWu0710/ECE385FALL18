@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Oct 02 22:05:53 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : 8_Bit_Multiplier
+Top-level Entity Name : Lab5_8_Bit_Multiplier_top_level
+Family : Cyclone IV E
+Total logic elements : 90
+    Total combinational functions : 74
+    Dedicated logic registers : 36
+Total registers : 36
+Total pins : 57
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

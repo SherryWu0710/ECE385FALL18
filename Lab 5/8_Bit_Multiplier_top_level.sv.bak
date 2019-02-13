@@ -1,0 +1,26 @@
+module Top_level(
+input logic [7:0] S,
+input logic Clk,
+input logic Reset,
+input logic Run,
+input logic ClearA_LoadB,
+
+output logic [6:0] AhexU,
+output logic [6:0] AhexL,
+output logic [6:0] BhexU,
+output logic [6:0] BhexL,
+output logic [7:0] Aval,
+output logic [7:0] Bval,
+output logic X
+
+);
+
+/*Inputs
+S – logic [7:0]
+Clk, Reset, Run, ClearA_LoadB – logic 
+Outputs
+AhexU, AhexL, BhexU, BhexL – logic [6:0]
+Aval, Bval – logic [7:0]
+X –logic
+*/
+

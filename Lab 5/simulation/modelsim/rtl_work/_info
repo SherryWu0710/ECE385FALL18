@@ -1,0 +1,239 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Sherry Wu/Desktop/ECE385/Lab 5/simulation/modelsim
+vadder_9_bits
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1538537043
+!i10b 1
+!s100 QB7>k@3lZ]7kNQTeZZFj22
+IK]Oc0JoUiY1BnFRj2W=cM2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 adder_9_bits_sv_unit
+S1
+R0
+Z5 w1537663735
+Z6 8C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/adder_9_bits.sv
+Z7 FC:/Users/Sherry Wu/Desktop/ECE385/Lab 5/adder_9_bits.sv
+L0 2
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1538537043.000000
+Z10 !s107 C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/adder_9_bits.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 5|C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/adder_9_bits.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 5}
+Z14 tCvgOpt 0
+vControl
+R1
+R2
+!i10b 1
+!s100 fz`@:Rb?K@E8n^hD>@nlo2
+IT?jkkjGOK<^:Jd9X5I6^40
+R3
+!s105 Control_sv_unit
+S1
+R0
+w1537663328
+8C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/Control.sv
+FC:/Users/Sherry Wu/Desktop/ECE385/Lab 5/Control.sv
+L0 4
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/Control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 5|C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/Control.sv|
+!i113 1
+R12
+R13
+R14
+n@control
+vflip_flop
+R1
+R2
+!i10b 1
+!s100 n=9^Go153j`XPP]b<Z]eW2
+I7hmiLj54P`h=VG`[=Ra4]3
+R3
+!s105 flip_flop_sv_unit
+S1
+R0
+w1537662174
+8C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/flip_flop.sv
+FC:/Users/Sherry Wu/Desktop/ECE385/Lab 5/flip_flop.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/flip_flop.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 5|C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/flip_flop.sv|
+!i113 1
+R12
+R13
+R14
+vfull_adder
+R1
+R2
+!i10b 1
+!s100 neBS[HPG>2A`=B4JSFSh_2
+I@KlL[]o^TTmaY1?gIPBM<1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 30
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vHexDriver
+R1
+R2
+!i10b 1
+!s100 ^DddjRd7Wla]U<SlP;mT@0
+Ihi3@@1T[8KPcH_j]6f36i2
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+w1536978639
+8C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/HexDriver.sv
+FC:/Users/Sherry Wu/Desktop/ECE385/Lab 5/HexDriver.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 5|C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/HexDriver.sv|
+!i113 1
+R12
+R13
+R14
+n@hex@driver
+vLab5_8_Bit_Multiplier_top_level
+R1
+R2
+!i10b 1
+!s100 nzlJ1[^<l2m?=;:7hWmle0
+IVhB0_W_FflnASfYKGhNRd3
+R3
+!s105 Lab5_8_Bit_Multiplier_top_level_sv_unit
+S1
+R0
+w1537902470
+8C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/Lab5_8_Bit_Multiplier_top_level.sv
+FC:/Users/Sherry Wu/Desktop/ECE385/Lab 5/Lab5_8_Bit_Multiplier_top_level.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/Lab5_8_Bit_Multiplier_top_level.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 5|C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/Lab5_8_Bit_Multiplier_top_level.sv|
+!i113 1
+R12
+R13
+R14
+n@lab5_8_@bit_@multiplier_top_level
+vreg_8
+R1
+R2
+!i10b 1
+!s100 HaWEL]:Y;mM9Vg^PZPbJP0
+INMD^k6WIh[90g6eN?a;fS3
+R3
+!s105 reg_820_sv_unit
+S1
+R0
+w1537663609
+8C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/reg_8 .sv
+FC:/Users/Sherry Wu/Desktop/ECE385/Lab 5/reg_8 .sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/reg_8 .sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 5|C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/reg_8 .sv|
+!i113 1
+R12
+R13
+R14
+vShift_Reg
+R1
+R2
+!i10b 1
+!s100 7C@l17`DdVgMSiAcDkVYB3
+I28NjXaYc=_0ZEgVJKMh;U3
+R3
+!s105 Shift_Reg_sv_unit
+S1
+R0
+w1537662735
+8C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/Shift_Reg.sv
+FC:/Users/Sherry Wu/Desktop/ECE385/Lab 5/Shift_Reg.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/Shift_Reg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 5|C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/Shift_Reg.sv|
+!i113 1
+R12
+R13
+R14
+n@shift_@reg
+vtestbench
+R1
+!s110 1538537044
+!i10b 1
+!s100 dGgZ_C4[F1LeSZG:FnlEZ0
+IWlkXd?RRlDdU@<kn>4K^;0
+R3
+!s105 testbench_sv_unit
+S1
+R0
+w1538537034
+8C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/testbench.sv
+FC:/Users/Sherry Wu/Desktop/ECE385/Lab 5/testbench.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1538537044.000000
+!s107 C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sherry Wu/Desktop/ECE385/Lab 5|C:/Users/Sherry Wu/Desktop/ECE385/Lab 5/testbench.sv|
+!i113 1
+R12
+R13
+R14
